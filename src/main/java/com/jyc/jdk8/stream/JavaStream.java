@@ -12,7 +12,7 @@ import static java.util.stream.Collectors.toList;
 /**
  * Created by jyc on 2017/10/23.
  */
-public class JavaStreamTest {
+public class JavaStream {
 
 
     public static void main(String[] args) {

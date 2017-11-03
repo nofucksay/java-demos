@@ -5,7 +5,7 @@ import java.sql.*;
 /**
  * Created by jyc on 2017/11/2.
  */
-public class PrestoJdbcTest {
+public class PrestoJdbc {
 
 
     public static void main(String[] args) throws SQLException {
