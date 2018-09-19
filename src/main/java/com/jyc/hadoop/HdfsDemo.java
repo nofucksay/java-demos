@@ -19,8 +19,10 @@ public class HdfsDemo {
     public static void main(String[] args) throws IOException {
         Configuration conf = new Configuration();
         conf.set("fs.defaultFS", "hdfs://10.104.90.45:9000");
+//        conf.set("fs.defaultFS", "hdfs://114.244.214.223:9000");
         FileSystem fs = FileSystem.get(conf);
-        Path path = new Path("/jyc/pyspark-test/sql.py");
+        Path path = new Path("/jyc/测试/test");
+//        Path path = new Path("/hadoop-env.sh");
         System.out.println(fs.exists(path));
 
         // read file

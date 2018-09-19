@@ -7,4 +7,13 @@
     <welcome-file-list>
         <welcome-file>/index.html</welcome-file>
     </welcome-file-list>
+
+    <servlet>
+        <servlet-name>test</servlet-name>
+        <servlet-class>com.jyc.web.TestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>test</servlet-name>
+        <url-pattern>/test_sql.do</url-pattern>
+    </servlet-mapping>
 </web-app>
