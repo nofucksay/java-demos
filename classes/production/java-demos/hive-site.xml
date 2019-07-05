@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+  <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:mysql://10.104.90.46:3306/metastore10?createDatabaseIfNotExist=true&amp;characterEncoding=UTF-8</value>
+  </property>
+  <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+        <value>com.mysql.jdbc.Driver</value>
+  </property>
+  <property>
+        <name>javax.jdo.option.ConnectionUserName</name>
+        <value>hive</value>
+  </property>
+  <property>
+        <name>javax.jdo.option.ConnectionPassword</name>
+        <value>hive</value>
+  </property>
+  <property>
+    <name>hive.metastore.warehouse.dir</name>
+    <value>/user/hadoop/warehouse</value>
+  </property>
+  <property>
+    <name>hive.metastore.uris</name>
+    <value>thrift://namenode-zhujy:9083</value>
+  </property>
+  <property>
+   <name>hive.exec.dynamic.partition.mode</name>
+   <value>nonstrict</value>
+  </property>
+<property>
+    <name>hive.metastore.schema.verification</name>
+    <value>false</value>
+    <description>
+      Enforce metastore schema version consistency.
+      True: Verify that version information stored in is compatible with one from Hive jars.  Also disable automatic
+            schema migration attempt. Users are required to manually migrate schema after Hive upgrade which ensures
+            proper metastore schema migration. (Default)
+      False: Warn if the version information stored in metastore doesn't match with one from in Hive jars.
+    </description>
+  </property>
+</configuration>
