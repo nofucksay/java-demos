@@ -1,11 +1,9 @@
 package com.jyc.jdk8.stream;
 
+import com.google.common.collect.Maps;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 import static java.util.stream.Collectors.toList;
 
@@ -83,6 +81,8 @@ public class JavaStream {
 
         private String breed;
 
+        public Dog(){}
+
         public Dog(String name, String breed) {
             this.name = name;
             this.breed = breed;
@@ -109,5 +109,44 @@ public class JavaStream {
             return String.format("[%s:%s]",getBreed(),getName());
         }
     }
+
+
+    @Test
+    public void test01(){
+//        Dog d = new Dog();
+//
+////        Map<String, Object> map = Maps.newHashMap();
+////        map.put("name", "pocky");
+////        map.put("breed", "bibibi");
+//
+////        map.replaceAll((s, o) -> s);
+////        map.compute("name", (s, o) -> o + "111");
+//
+////        Optional.ofNullable(map).orElseGet(() -> Collections.EMPTY_MAP);
+//
+//
+//        ArrayList<String> list = Lists.newArrayList("1", "2", "3");
+////        list.removeIf(e -> "1".equals(e));
+//        list.replaceAll(s -> "000" );
+//        System.out.println(list);
+
+//        System.out.println(map);
+
+//        testLongLongMap();
+
+        System.out.println(null+"");
+    }
+
+    private void testLongLongMap() {
+        Map<Long, Long> map = Maps.newHashMap();
+        map.put(1L,1L);
+        map.put(2L,2L);
+        map.put(3L,3L);
+
+        System.out.println(map.get(1L));
+
+        new Long(1).intValue()
+    }
+
 
 }
