@@ -145,7 +145,7 @@ public class JavaStream {
 
         System.out.println(map.get(1L));
 
-        new Long(1).intValue()
+        new Long(1).intValue();
     }
 
 
